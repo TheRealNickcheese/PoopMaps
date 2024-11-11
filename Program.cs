@@ -4,13 +4,16 @@ using Shitmaps.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews(); // Only add MVC services
+builder.Services.AddControllersWithViews();
 
 // Add DbContext to interact with the database
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    var connectionString = builder.Configuration.GetValue<string>("ConnectionStrings_DefaultConnection");
+    options.UseSqlServer(connectionString);
+});
 
-// Create the app
+// Build the app
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,16 +27,16 @@ else
     app.UseHsts();
 }
 
-// Serve static files
 app.UseStaticFiles();
 
 // Use routing for MVC
 app.UseRouting();
 
-// Set up the default controller route
+// Set up default controller route
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"); // Default to the Home controller and Index action
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5000"; // Default to 5000 if PORT is not found
+// Use environment variable for dynamic port binding
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000"; // Default to 5000 if not set
 app.Run($"http://0.0.0.0:{port}");
