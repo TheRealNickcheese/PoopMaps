@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shitmaps")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30e95138abc58d28bea38974f67a566a87de1ccf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a972e0df1764a29a72df4dcad6e76a547dbb60d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shitmaps")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shitmaps")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

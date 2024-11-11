@@ -140,3 +140,4 @@ C:\Users\Nicholas\Shitmaps\obj\Debug\net8.0\refint\Shitmaps.dll
 C:\Users\Nicholas\Shitmaps\obj\Debug\net8.0\Shitmaps.pdb
 C:\Users\Nicholas\Shitmaps\obj\Debug\net8.0\Shitmaps.genruntimeconfig.cache
 C:\Users\Nicholas\Shitmaps\obj\Debug\net8.0\ref\Shitmaps.dll
+C:\Users\Nicholas\Shitmaps\obj\Debug\net8.0\Shitmaps.sourcelink.json

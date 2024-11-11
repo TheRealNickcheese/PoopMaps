@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FAe/qvmgbndi69NQvku5lWCVP3SYmI8wEhskQ8WMjSI=",
+  "Hash": "Sifw+gIUCixCFTHsIqNDO3wDQV0KOgUKdJRSdmZKQb8=",
   "Source": "Shitmaps",
   "BasePath": "_content/Shitmaps",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Nicholas\\Shitmaps\\wwwroot\\js\\map.js",
+      "SourceId": "Shitmaps",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nicholas\\Shitmaps\\wwwroot\\",
+      "BasePath": "_content/Shitmaps",
+      "RelativePath": "js/map.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\map.js"
     },
     {
       "Identity": "C:\\Users\\Nicholas\\Shitmaps\\wwwroot\\js\\site.js",

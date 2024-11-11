@@ -7,7 +7,7 @@ namespace Shitmaps.Pages
     {
         public double Latitude { get; set; }
         public double Longitude { get; set; }
-        public string BusinessName { get; set; }
+    public string? BusinessName { get; set; }  // Marked as nullable
 
         public void OnGet()
         {

@@ -14,8 +14,8 @@ namespace Shitmaps.Data  // This namespace must match the one in your Program.cs
     public class BathroomExperience
     {
         public int Id { get; set; }
-        public string BusinessName { get; set; }
-        public string ExperienceDetails { get; set; }
+ public string? BusinessName { get; set; }  // Marked as nullable
+    public string? ExperienceDetails { get; set; }  // Marked as nullable
         public double Latitude { get; set; }
         public double Longitude { get; set; }
     }
