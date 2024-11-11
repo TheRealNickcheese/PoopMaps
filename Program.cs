@@ -35,4 +35,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"); // Default to the Home controller and Index action
 
-app.Run();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000"; // Default to 5000 if PORT is not found
+app.Run($"http://0.0.0.0:{port}");
