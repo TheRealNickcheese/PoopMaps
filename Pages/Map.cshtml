@@ -1,0 +1,16 @@
+@page
+
+<div id="map" style="height: 500px;"></div>
+
+<script>
+    var map = L.map('map').setView([51.505, -0.09], 13); // Adjust coordinates and zoom level
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Example: Add a marker
+    L.marker([51.5, -0.09]).addTo(map)
+        .bindPopup("<b>Hello world!</b><br />I am a popup.")
+        .openPopup();
+</script>
